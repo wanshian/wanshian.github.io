@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://wanshian.github.io/wanshian/index.html</loc>
-    <lastmod>2026-02-11</lastmod>
+    <loc>https://wanshian.github.io/</loc>
+    <lastmod>2026-02-26</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://wanshian.github.io/wanshian/about.html</loc>
-    <lastmod>2026-02-11</lastmod>
+    <loc>https://wanshian.github.io/about.html</loc>
+    <lastmod>2026-02-26</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://wanshian.github.io/wanshian/philosophy.html</loc>
-    <lastmod>2026-02-11</lastmod>
+    <loc>https://wanshian.github.io/philosophy.html</loc>
+    <lastmod>2026-02-26</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://wanshian.github.io/wanshian/services.html</loc>
-    <lastmod>2026-02-11</lastmod>
+    <loc>https://wanshian.github.io/services.html</loc>
+    <lastmod>2026-02-26</lastmod>
     <priority>0.90</priority>
   </url>
 </urlset>
