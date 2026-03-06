@@ -4,122 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>萬象機械工程有限公司 | 專業水利機電與防洪工程</title>
-    <meta name="google-site-verification" content="wrbNZF_9W9HzixPXy_1C7DXdbEyU9PK5mtb4_SrHt0s" />
-    
     <link rel="icon" href="images/favicon.png" type="image/png">
-    <link rel="apple-touch-icon" href="images/favicon.png">
-
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
-        .accent-border { border-left: 4px solid #3b82f6; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-slate-50 text-slate-900 font-sans">
+    <div id="header-placeholder"></div>
 
-<nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
-        
-        <a href="./" class="flex flex-col group">
-            <span class="text-2xl font-black tracking-widest text-blue-900 group-hover:text-blue-700 transition">萬象機械工程有限公司</span>
-            <span class="text-[10px] text-blue-600 font-bold tracking-[0.2em] uppercase">Wan Shian Mechanical Engineering Llc</span>
-        </a>
+    <header class="hero-parallax text-white py-32 md:py-48 px-6 relative overflow-hidden">
+        <div class="hero-overlay"></div>
 
-        <div class="hidden md:flex space-x-8 font-medium items-center">
-            <a href="./" class="text-blue-600 font-bold border-b-2 border-blue-600">首頁</a>
-            
-            <a href="about.html" class="hover:text-blue-600 transition">關於萬象</a>
-            <a href="philosophy.html" class="hover:text-blue-600 transition">企業理念</a>
-            <a href="services.html" class="hover:text-blue-600 transition">經營項目</a>
-            <a href="mailto:wan.shian5bm@gmail.com?subject=關於萬象機械工程諮詢" class="bg-blue-900 text-white px-5 py-2 rounded shadow-md hover:bg-blue-800 transition flex items-center justify-center">聯絡我們</a>
-        </div>
-    </div>
-</nav>
-
-    <header class="hero-gradient text-white py-24 md:py-32 px-6 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto relative z-10">
-            <div class="inline-block px-3 py-1 bg-blue-500/20 border border-blue-400/30 rounded text-blue-300 text-sm mb-6">
+        <div class="max-w-7xl mx-auto hero-content">
+            <div class="inline-block px-3 py-1 bg-blue-500/20 border border-blue-400/30 rounded text-blue-300 text-sm mb-6 backdrop-blur-sm">
                 成立於民國 83 年 · 專業水利機電領航者
             </div>
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                專注政府防洪水利設施<br><span class="text-blue-400">興建與維護保養</span>
+            
+            <h1 class="text-4xl md:text-7xl font-bold mb-6 leading-tight">
+                專注政府防洪水利設施<br>
+                <span class="text-blue-400">興建與維護保養</span>
             </h1>
-            <p class="text-lg text-slate-400 max-w-2xl mb-10 leading-relaxed">
-                萬象機械秉持態度、專業及責任，深耕機電工程二十餘年。我們致力於防洪抽水站新建、水閘門操作維護及遠端監控系統，守護每一座城市的排洪安全。
+            
+            <p class="text-lg md:text-xl text-slate-300 max-w-2xl mb-10 leading-relaxed">
+                萬象機械秉持態度、專業及責任，深耕南部機電工程三十餘年。我們致力於防洪抽水站新建與水閘門操作，守護每一座城市的排洪安全。
             </p>
-            <div class="flex gap-4">
-                <a href="services.html" class="bg-white text-blue-900 px-8 py-3 rounded font-bold hover:bg-blue-50 transition">服務範疇</a>
-                <a href="about.html" class="border border-slate-500 px-8 py-3 rounded font-bold hover:bg-white/10 transition">了解更多</a>
+            
+            <div class="flex flex-wrap gap-4">
+                <a href="services.html" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 transition-all card-hover shadow-lg">
+                    服務範疇
+                </a>
+                <a href="about.html" class="bg-white/10 backdrop-blur-md border border-white/30 px-8 py-4 rounded-xl font-bold hover:bg-white/20 transition-all">
+                    了解更多
+                </a>
             </div>
         </div>
-        <div class="absolute right-[-5%] bottom-[-10%] text-[15rem] font-black text-white/[0.03] select-none uppercase">WS</div>
+
+        <div class="absolute right-[-5%] bottom-[-5%] text-[12rem] font-black text-white/[0.05] select-none uppercase hidden lg:block">
+            Wan Shian
+        </div>
     </header>
 
-    <section class="relative z-20 -mt-12 max-w-6xl mx-auto px-6">
+    <section class="reveal relative z-20 -mt-12 max-w-6xl mx-auto px-6">
         <div class="bg-white rounded-2xl shadow-xl grid grid-cols-2 md:grid-cols-4 gap-4 p-8 border border-slate-100">
             <div class="text-center border-r border-slate-100">
                 <div class="text-3xl md:text-4xl font-black text-blue-900 mb-1">30+</div>
-                <div class="text-slate-500 text-xs md:text-sm font-bold tracking-widest uppercase">業界深耕</div>
+                <div class="text-slate-500 text-xs font-bold tracking-widest uppercase">業界深耕</div>
             </div>
             <div class="text-center md:border-r border-slate-100">
                 <div class="text-3xl md:text-4xl font-black text-blue-900 mb-1">100+</div>
-                <div class="text-slate-500 text-xs md:text-sm font-bold tracking-widest uppercase">維護組件</div>
+                <div class="text-slate-500 text-xs font-bold tracking-widest uppercase">維護組件</div>
             </div>
             <div class="text-center border-r border-slate-100">
                 <div class="text-3xl md:text-4xl font-black text-blue-600 mb-1">24H</div>
-                <div class="text-slate-500 text-xs md:text-sm font-bold tracking-widest uppercase">防汛應援</div>
+                <div class="text-slate-500 text-xs font-bold tracking-widest uppercase">防汛應援</div>
             </div>
             <div class="text-center">
                 <div class="text-2xl md:text-3xl font-black text-blue-900 mb-1 leading-tight">南台灣</div>
-                <div class="text-slate-500 text-xs md:text-sm font-bold tracking-widest uppercase">在地服務</div>
+                <div class="text-slate-500 text-xs font-bold tracking-widest uppercase">在地服務</div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-24 max-w-7xl mx-auto px-6">
+    <section id="about" class="reveal py-24 max-w-7xl mx-auto px-6">
         <div class="grid md:grid-cols-2 gap-16 items-center">
             <div>
                 <h2 class="text-3xl font-bold mb-6 accent-border pl-4">關於萬象機械</h2>
-                <p class="text-slate-600 mb-6 leading-relaxed">
-                    萬象機械工程有限公司成立於西元 1994 年，總部設立於高雄鼓山，並於台南安南區、嘉義太保市設有工務所，服務範圍涵蓋南部核心區域。
-                </p>
-                <p class="text-slate-600 mb-8 leading-relaxed">
-                    我們不僅提供機械安裝，更參與了多項重大水利民生工程，透過專業的技術團隊與 24 小時的應變機制，確保防汛期間每一滴水都能順利排放。
-                </p>
-                <a href="about.html" class="text-blue-600 font-bold hover:text-blue-800 flex items-center">
-                    查看詳細歷史實績 <i class="fa-solid fa-arrow-right ml-2"></i>
-                </a>
+                <p class="text-slate-600 mb-6 leading-relaxed">萬象機械工程有限公司成立於西元 1994 年，總部設立於高雄鼓山，並於台南安南區、嘉義太保市設有工務所，服務範圍涵蓋南部核心區域。</p>
+                <p class="text-slate-600 mb-8 leading-relaxed">我們不僅提供機械安裝，更參與了多項重大水利民生工程，透過專業的技術團隊與 24 小時的應變機制，確保防汛期間每一滴水都能順利排放。</p>
+                <a href="about.html" class="text-blue-600 font-bold hover:text-blue-800 flex items-center">查看詳細歷史實績 <i class="fa-solid fa-arrow-right ml-2"></i></a>
             </div>
-<div class="h-64 md:h-96 rounded-2xl overflow-hidden shadow-lg bg-slate-200">
-    <img src="images/aerial camera.jpg" alt="描述照片內容" class="w-full h-full object-cover">
+            <div class="h-64 md:h-96 rounded-2xl overflow-hidden shadow-lg bg-slate-200 hover-zoom">
+                <img src="images/aerial camera1.jpg" alt="抽水站實景" class="w-full h-full object-cover" loading="lazy">
             </div>
         </div>
     </section>
 
-    <section id="services" class="bg-slate-100 py-24 px-6">
+    <section id="services" class="reveal bg-slate-100 py-24 px-6">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold mb-4">專業營業項目</h2>
                 <p class="text-slate-500">提供從設計、安裝到後端維護的一站式工程解決方案</p>
             </div>
             <div class="grid md:grid-cols-4 gap-6">
-                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
+                <div class="bg-white p-8 rounded-xl shadow-sm card-hover">
                     <i class="fa-solid fa-water text-3xl text-blue-600 mb-6"></i>
                     <h3 class="text-xl font-bold mb-3">防洪抽水站</h3>
                     <p class="text-slate-500 text-sm leading-relaxed">承攬公共建設之防洪抽水站相關機械安裝與新建工程。</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
+                <div class="bg-white p-8 rounded-xl shadow-sm card-hover">
                     <i class="fa-solid fa-gears text-3xl text-blue-600 mb-6"></i>
                     <h3 class="text-xl font-bold mb-3">水利機械設備</h3>
                     <p class="text-slate-500 text-sm leading-relaxed">專業水閘門安裝、操作與定期維護保養工作。</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
+                <div class="bg-white p-8 rounded-xl shadow-sm card-hover">
                     <i class="fa-solid fa-desktop text-3xl text-blue-600 mb-6"></i>
                     <h3 class="text-xl font-bold mb-3">遠端監控系統</h3>
                     <p class="text-slate-500 text-sm leading-relaxed">整合自動化監控與保養，確保設施即時反應能力。</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
+                <div class="bg-white p-8 rounded-xl shadow-sm card-hover">
                     <i class="fa-solid fa-wrench text-3xl text-blue-600 mb-6"></i>
                     <h3 class="text-xl font-bold mb-3">維護操作代管</h3>
                     <p class="text-slate-500 text-sm leading-relaxed">提供專業技術人員駐點，進行設施管理與操作維護。</p>
@@ -128,60 +110,15 @@
         </div>
     </section>
 
-    <footer id="contact" class="bg-slate-900 text-white py-16 px-6">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 text-left">
-            <div>
-                <h3 class="text-xl font-bold mb-6">萬象機械工程有限公司</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">
-                    秉持「態度、專業及責任」的經營理念，<br>
-                    創造員工安全與歡欣的工作環境。
-                </p>
-            </div>
-            <div>
-                <h4 class="font-bold mb-6 text-blue-400">據點資訊</h4>
-                <ul class="text-slate-400 text-sm space-y-4">
-                    <li>
-                        <i class="fa-solid fa-location-dot mr-2 text-blue-400"></i> 
-                        <b>高雄總管理處：</b><br>
-                        <a href="https://www.google.com/maps/search/?api=1&query=高雄市鼓山區美術館二路230號5樓" target="_blank" class="hover:text-white hover:underline transition">
-                            高雄市鼓山區迪化街88之1號
-                        </a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-location-dot mr-2 text-blue-400"></i> 
-                        <b>台南辦公室：</b><br>
-                        <a href="https://www.google.com/maps/search/?api=1&query=台南市安南區本田路三段339巷77-1號" target="_blank" class="hover:text-white hover:underline transition">
-                            台南市安南區本田路三段339巷77-1號
-                        </a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-location-dot mr-2 text-blue-400"></i> 
-                        <b>嘉義辦公室：</b><br>
-                        <a href="https://www.google.com/maps/search/?api=1&query=嘉義縣太保市太保五路176號" target="_blank" class="hover:text-white hover:underline transition">
-                            嘉義縣太保市太保五路176號
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-bold mb-6 text-blue-400">聯繫方式</h4>
-                <ul class="text-slate-400 text-sm space-y-4">
-                    <li><i class="fa-solid fa-phone mr-2 text-blue-400"></i> 07-5520817</li>
-                    <li><i class="fa-solid fa-envelope mr-2 text-blue-400"></i> 服務信箱：wan.shian5bm@gmail.com</li>
-                </ul>
-            </div>
-        </div>
-        <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-800 text-center text-slate-500 text-xs">
-            © 2026 萬象機械工程有限公司 Wan Shian Mechanical. All rights reserved.
-        </div>
-    </footer>
-
+    <div id="footer-placeholder"></div>
+    <script src="components.js"></script>
 </body>
+<div id="preloader">
+    <img src="images/favicon.png" class="w-20 h-20 logo-pulse" alt="Loading...">
+</div>
+<script>
+    if (sessionStorage.getItem('hasSeenPreloader')) {
+        document.getElementById('preloader').style.display = 'none';
+    }
+</script>
 </html>
-
-
-
-
-
-
-
