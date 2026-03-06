@@ -1,0 +1,147 @@
+/* style.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.02em;
+    scroll-behavior: smooth;
+    
+}
+
+/* 漸層與邊框 */
+.hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+.accent-border { border-left: 4px solid #3b82f6; }
+
+/* 進階：圖片懸停放大 */
+.hover-zoom { overflow: hidden; }
+.hover-zoom img { transition: transform 0.5s ease; }
+.hover-zoom:hover img { transform: scale(1.05); }
+
+/* 進階：卡片浮動與陰影 */
+.card-hover {
+    transition: all 0.3s ease;
+}
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+/* style.css */
+
+.hero-parallax {
+    /* 設定背景圖片，請確認 images 資料夾有這張圖 */
+    background-image: url('images/aerial camera.jpg'); 
+    background-attachment: fixed; /* 視差滾動的核心：固定背景 */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 黑色半透明遮罩層：確保文字在任何圖片上都清晰 */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.4));
+    z-index: 1;
+}
+
+/* 內容層：確保在遮罩上方 */
+.hero-content {
+    position: relative;
+    z-index: 10;
+}
+/* style.css */
+
+/* 定義動畫：由下往上浮現 */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+/* 當元素進入視窗時啟動 */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* style.css */
+
+/* 載入動畫容器 */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0f172a; /* 使用你原本的深藍色 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* 確保在最上層 */
+    transition: opacity 0.5s ease;
+}
+
+/* 旋轉動畫 */
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    border-top: 5px solid #3b82f6; /* 亮藍色重點 */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 載入完成後消失 */
+.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+/* style.css */
+
+/* 載入動畫容器：深藍色背景 */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0f172a; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+/* 呼吸燈動畫效果 */
+.logo-pulse {
+    /* 將原本的 2s 改為 2.5s，讓呼吸節奏稍微拉長一點更顯大氣 */
+    animation: pulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.4;
+        transform: scale(0.85);
+    }
+}
+
+/* 載入完成後的淡出樣式 */
+.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
