@@ -51,8 +51,8 @@ const footerHTML = `
                 <li>
                     <i class="fa-solid fa-location-dot mr-2 text-blue-400"></i> 
                     <b>高雄總管理處：</b><br>
-                    <a href="https://www.google.com/maps/search/?api=1&query=高雄市鼓山區美術館二路230號5樓" target="_blank" class="hover:text-white hover:underline transition">
-                        高雄市鼓山區美術館二路230號5樓
+                    <a href="https://www.google.com/maps/search/?api=1&query=高雄市鼓山區迪化街88之1號" target="_blank" class="hover:text-white hover:underline transition">
+                        高雄市鼓山區迪化街88之1號
                     </a>
                 </li>
                 <li>
@@ -166,3 +166,4 @@ window.addEventListener('load', function() {
         reveal();
     }
 });
+
