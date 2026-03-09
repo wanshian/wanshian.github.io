@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>萬象機械工程有限公司 | 專業水利機電與防洪工程</title>
+        <script>
+        if (sessionStorage.getItem("hasSeenLoader")) {
+            document.documentElement.classList.add('no-loader');
+        }
+    </script>
     <link rel="icon" href="images/favicon.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -121,4 +126,25 @@
         document.getElementById('preloader').style.display = 'none';
     }
 </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const loader = document.getElementById("loader-wrapper");
+        
+        // 檢查瀏覽器內部的「快閃記憶體」，看看這回合是否看過動畫
+        if (sessionStorage.getItem("hasSeenLoader")) {
+            // 如果看過了，直接移除動畫層，不留痕跡
+            loader.style.display = "none";
+        } else {
+            // 如果是第一次進站，等網頁載入完畢後執行動畫
+            window.addEventListener("load", function() {
+                setTimeout(() => {
+                    loader.classList.add("loader-hidden");
+                    // 標記「已經看過了」，直到關閉瀏覽器分頁為止
+                    sessionStorage.setItem("hasSeenLoader", "true");
+                }, 1500);
+            });
+        }
+    });
+</script>
 </html>
+
